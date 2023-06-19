@@ -6,7 +6,6 @@
 #include <mmsystem.h>
 #include <time.h>
 
-#pragma comment(lib, "winmm.lib")
 
 int width = 19;
 int height = 32;
@@ -101,20 +100,6 @@ int setGamePlayScreenToScreenBuffer(char* screenBuf, int width, int height)
     char input[10];
     srand(time(NULL));
     
-
-    clearBuffer(screenBuf, 19, 30);
-
-	writeStringToBuffer(screenBuf, "life : ", 2, 26);
-	char lifeString[10];
-	sprintf(lifeString, "%d", life);
-	writeStringToBuffer(screenBuf, lifeString, 10, 26);
-
-    writeStringToBuffer(screenBuf, "Score : ", 2, 27);
-    char scoreString[10];
-    sprintf(scoreString, "%d", score);
-    writeStringToBuffer(screenBuf, scoreString, 10, 27);
-
-    writeStringToBuffer(screenBuf, "JUDGE : ", 2, 28);
 
     while (life > 0)
     {
