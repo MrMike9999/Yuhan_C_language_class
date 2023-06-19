@@ -1,0 +1,2 @@
+GCC해야할때 입력해야하는거
+gcc code01.c main.c -o main.exe -lwinmm
